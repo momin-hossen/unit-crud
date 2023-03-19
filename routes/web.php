@@ -29,7 +29,11 @@ use Illuminate\Support\Facades\Route;
 
 // Ekhno dekh kivabe kori,
 
-// then just commit a click korlei kaj sesh--- 1dom simple.
+// then just commit a click korlei kaj sesh--- 1dom simple. and then oi buttun ta te jokhon sync change likha uthbo tokhon oi button a click korbi,
+
+// Ekhn abar change korsi dekhe dekh web.php chole ashche, jodi onno file a change kori tahole oitau ashbe, 
+
+// Eta hocche first time uplaod korar por.
 
 Route::get('/', function () {
     return view('welcome');
