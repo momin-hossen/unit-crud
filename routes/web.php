@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UnitController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,3 +39,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('units/index', [UnitController::class, 'index']);
+Route::get('units/create', [UnitController::class, 'create']);
+Route::post('units/store', [UnitController::class, 'store']);
+Route::get('units/delete/{id}', [UnitController::class, 'delete']);
